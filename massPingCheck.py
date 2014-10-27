@@ -6,7 +6,7 @@ import commands
 import argparse
 
 def parseArgs():
-    parser = argparse.ArgumentParser(description='mass ping check script', epilog='usage: massPingCheck.py [-v] host_file', formatter_class=lambda prog: argparse.HelpFormatter(prog,max_help_position=5))
+    parser = argparse.ArgumentParser(description='mass ping check script', epilog='for help: ./massPingCheck.py --help', formatter_class=lambda prog: argparse.HelpFormatter(prog,max_help_position=5))
     parser.add_argument("list_file", default="", help="file containing IPs to process")
 
     parser.add_argument("-q", "--quiet", action='store_true', default=False, dest="quiet", help="output nothing")
